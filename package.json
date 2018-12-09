@@ -1,0 +1,30 @@
+{
+  "name": "react-chat-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "10.6.0",
+    "npm": "6.1.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "backend": "nodemon index.js",
+    "frontend": "npm run start --prefix client",
+    "start:dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "Tanish Grover",
+  "license": "ISC",
+  "dependencies": {
+    "actions-on-google": "^2.5.0",
+    "body-parser": "^1.18.3",
+    "dialogflow": "^0.7.0",
+    "dialogflow-fulfillment": "^0.6.1",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.7"
+  }
+}
