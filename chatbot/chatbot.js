@@ -6,6 +6,9 @@ const projectID = config.googleProjectID;
 const sessionID = config.dialogFlowSessionID;
 const languageCode = config.dialogFlowSessionLanguageCode;
 
+console.log("LOOOK HERE BOI", typeof config.googlePrivateKey, config.googlePrivateKey);
+console.log(config.googleClientEmail);
+
 const credentials = {
   client_email: config.googleClientEmail,
   private_key: config.googlePrivateKey
@@ -22,7 +25,7 @@ module.exports = {
       queryInput: {
         text: {
           text: text,
-          languageCode: config.dialogFlowSessionLanguageCode
+          languageCode: languageCode
         }
       },
       queryParams: {
@@ -44,7 +47,7 @@ module.exports = {
         event: {
           name: event,
           parameters: structjson.jsonToStructProto(parameters),
-          languageCode: config.dialogFlowSessionLanguageCode
+          languageCode: languageCode
         }
       }
     };

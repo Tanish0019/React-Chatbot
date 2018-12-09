@@ -9,8 +9,8 @@ const Card = props => (
           src={props.payload.fields.image.stringValue}
         />
       </div>
-      <div className="card-content">
-        <a target="_blank" href={props.payload.fields.link.stringValue}>
+      <div className="card-content" style={{fontSize: 15, textAlign: 'center'}}>
+        <a target="_blank" rel="noopener noreferrer" href={props.payload.fields.link.stringValue}>
           {props.payload.fields.description.stringValue}
         </a>
       </div>
