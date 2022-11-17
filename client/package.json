@@ -8,7 +8,7 @@
     "materialize-css": "^1.0.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-scripts": "2.1.1",
+    "react-scripts": "5.0.1",
     "universal-cookie": "^3.0.7",
     "uuid": "^3.3.2"
   },
