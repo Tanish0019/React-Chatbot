@@ -18,10 +18,10 @@
   "license": "ISC",
   "dependencies": {
     "actions-on-google": "^2.5.0",
-    "body-parser": "^1.18.3",
+    "body-parser": "^1.20.1",
     "dialogflow": "^0.7.0",
     "dialogflow-fulfillment": "^0.6.1",
-    "express": "^4.16.4"
+    "express": "^4.18.2"
   },
   "devDependencies": {
     "concurrently": "^4.1.0",
